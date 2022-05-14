@@ -1,0 +1,16 @@
+{
+    "name": "barronhsu15/ip",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Barronhsu15\\IP\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Barron Hsu",
+            "email": "barron.hsu.15@gmail.com"
+        }
+    ],
+    "require": {}
+}
