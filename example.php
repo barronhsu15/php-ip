@@ -2,7 +2,7 @@
 
 namespace Barronhsu15\IP;
 
-require_once __DIR__. '/vendor/autoload.php';
+require_once __DIR__ . '/vendor/autoload.php';
 
 $ipv4 = new IPv4();
 $ip = '192.168.1.1';
