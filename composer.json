@@ -1,6 +1,7 @@
 {
     "name": "barronhsu15/ip",
     "type": "library",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Barronhsu15\\IP\\": "src/"
