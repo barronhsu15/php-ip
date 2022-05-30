@@ -69,7 +69,7 @@ class IPv6 extends IP
         if (is_int($mask) && $mask >= 0 && $mask <= self::LENGTH) {
             $result = true;
         } elseif ($this->checkAddressFormat($mask)) {
-            $result = strstr($this->convertAddressToBinary($mask), self::ZERO. self::ONE) === false;
+            $result = strstr($this->convertAddressToBinary($mask), self::ZERO . self::ONE) === false;
         } else {
             $result = false;
         }
@@ -109,7 +109,7 @@ class IPv6 extends IP
      */
     private function convertAbbreviationToFull($address)
     {
-        $keyword = self::SEPARATOR. self::SEPARATOR;
+        $keyword = self::SEPARATOR . self::SEPARATOR;
 
         $separatorTarget = self::GROUP - 1;
         $separatorCount = substr_count($address, self::SEPARATOR);
@@ -119,7 +119,7 @@ class IPv6 extends IP
         $head = substr($address, 0, 1) == self::SEPARATOR ? self::ZERO : '';
         $body = implode(self::ZERO, str_split($separators));
         $foot = substr($address, -1) == self::SEPARATOR ? self::ZERO : '';
-        $replace = $head. $body. $foot;
+        $replace = $head . $body . $foot;
 
         return str_replace($keyword, $replace, $address);
     }

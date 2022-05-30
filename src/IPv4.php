@@ -69,7 +69,7 @@ class IPv4 extends IP
         if (is_int($mask) && $mask >= 0 && $mask <= self::LENGTH) {
             $result = true;
         } elseif ($this->checkAddressFormat($mask)) {
-            $result = strstr($this->convertAddressToBinary($mask), self::ZERO. self::ONE) === false;
+            $result = strstr($this->convertAddressToBinary($mask), self::ZERO . self::ONE) === false;
         } else {
             $result = false;
         }
