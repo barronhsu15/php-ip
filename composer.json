@@ -1,6 +1,8 @@
 {
     "name": "barronhsu15/ip",
+    "description": "A PHP library for IP address matching network and mask.",
     "type": "library",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Barronhsu15\\IP\\": "src/"
