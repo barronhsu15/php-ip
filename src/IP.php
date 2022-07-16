@@ -40,7 +40,7 @@ abstract class IP
         $result = '';
 
         for ($i = 0; $i < count($addressSplited); $i++) {
-            $result .= strval(intval($addressSplited[$i]) * intval($maskSplited[$i]));
+            $result .= (string) ((int) $addressSplited[$i] * (int) $maskSplited[$i]);
         }
 
         return $result;
