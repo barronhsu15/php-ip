@@ -37,7 +37,7 @@ abstract class IP
     {
         $addressSplited = str_split($address);
         $maskSplited = str_split($mask);
-        $result = "";
+        $result = '';
 
         for ($i = 0; $i < count($addressSplited); $i++) {
             $result .= strval(intval($addressSplited[$i]) * intval($maskSplited[$i]));
