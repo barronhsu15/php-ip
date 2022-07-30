@@ -116,9 +116,9 @@ class IPv6 extends IP
         $separatorDistance = strlen($keyword) + $separatorTarget - $separatorCount;
 
         $separators = str_repeat(self::SEPARATOR, $separatorDistance);
-        $head = substr($address, 0, 1) == self::SEPARATOR ? self::ZERO : '';
+        $head = substr($address, 0, 1) === self::SEPARATOR ? self::ZERO : '';
         $body = implode(self::ZERO, str_split($separators));
-        $foot = substr($address, -1) == self::SEPARATOR ? self::ZERO : '';
+        $foot = substr($address, -1) === self::SEPARATOR ? self::ZERO : '';
         $replace = $head . $body . $foot;
 
         return str_replace($keyword, $replace, $address);
